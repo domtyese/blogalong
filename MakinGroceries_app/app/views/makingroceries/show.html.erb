@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Item:</strong>
+  <%= @makingrocery.item %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @makingrocery.quantity %>
+</p>
+
+<p>
+  <strong>Coupon:</strong>
+  <%= @makingrocery.coupon %>
+</p>
+
+<p>
+  <strong>Done:</strong>
+  <%= @makingrocery.done %>
+</p>
+
+<%= link_to 'Edit', edit_makingrocery_path(@makingrocery) %> |
+<%= link_to 'Back', makingroceries_path %>

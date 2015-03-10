@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Makingroceries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Quantity</th>
+      <th>Coupon</th>
+      <th>Done</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @makingroceries.each do |makingrocery| %>
+      <tr>
+        <td><%= makingrocery.item %></td>
+        <td><%= makingrocery.quantity %></td>
+        <td><%= makingrocery.coupon %></td>
+        <td><%= makingrocery.done %></td>
+        <td><%= link_to 'Show', makingrocery %></td>
+        <td><%= link_to 'Edit', edit_makingrocery_path(makingrocery) %></td>
+        <td><%= link_to 'Destroy', makingrocery, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Makingrocery', new_makingrocery_path %>

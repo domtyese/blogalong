@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  item: MyString
+  quantity: MyText
+  coupon: MyText
+  done: false
+
+two:
+  item: MyString
+  quantity: MyText
+  coupon: MyText
+  done: false
